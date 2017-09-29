@@ -1,5 +1,4 @@
 source https://www.nuget.org/api/v2
-framework: netstandard2 
 nuget FSharp.Core
 nuget Microsoft.Identity.Client
 nuget System.Diagnostics.TraceSource
@@ -10,7 +9,6 @@ nuget Xamarin.Android.FSharp.ResourceProvider
 nuget Xamarin.Android.Support.Design
 nuget Xamarin.Android.Support.Constraint.Layout
 nuget Xamarin.Android.Support.v4
-nuget Xamarin.Android.Support.v7.AppCompat
 nuget Xamarin.Bindings.SytemBarTint
 nuget Xamarin.Controls.SignaturePad
 nuget Xamarin.DiscreteSeekBar.Android
