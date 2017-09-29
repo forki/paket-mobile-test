@@ -1,0 +1,113 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <DefineConstants>$(DefineConstants);FX_NO_LOCAL_FILESYSTEM</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_CUSTOMTYPEDESCRIPTOR</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_REGEX_COMPILATION</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_URI_WORKAROUND</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_REFERER</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_HOST</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_AUTOMATICDECOMPRESSION</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_CONTENTLENGTH</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_USERAGENT</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_CONNECTION</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_DATE</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_EXPECT</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_IFMODIFIEDSINCE</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_RANGE</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBREQUEST_TIMEOUT</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBRESPONSE_CHARACTERSET</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_ENVIRONMENT_VARIABLES</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_GETENCODING_BY_CODEPAGE</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBRESPONSE_IS_FROM_CACHE</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBRESPONSE_IS_MUTUALLY_AUTHENTICATED</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NO_WEBRESPONSE_CLOSE</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_HAS_WEBRESPONSE_SUPPORTS_HEADERS</DefineConstants>
+    <DefineConstants>$(DefineConstants);FX_NET_CORE_REFLECTION</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>BeforeBuild</type>
+          <command>msbuild /t:Restore</command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="paket.references" />
+    <Compile Include="..\paket-files\jack-pappas\ExtCore\ExtCore\Pervasive.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/Pervasive.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\jack-pappas\ExtCore\ExtCore\Control.Agents.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/Control.Agents.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\jack-pappas\ExtCore\ExtCore\Control.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/Control.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\Net\UriUtils.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/UriUtils.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\Net\Http.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/Http.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\CommonRuntime\IO.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/IO.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\CommonRuntime\Caching.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/Caching.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\CommonRuntime\TextConversions.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/TextConversions.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\CommonRuntime\TextRuntime.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/TextRuntime.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\CommonRuntime\Pluralizer.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/Pluralizer.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\CommonRuntime\NameUtils.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/NameUtils.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\CommonRuntime\StructuralTypes.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/StructuralTypes.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\CommonRuntime\StructuralInference.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/StructuralInference.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\Json\JsonValue.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/JsonValue.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\Json\JsonConversions.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/JsonConversions.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\Json\JsonExtensions.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/JsonExtensions.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\fsharp\FSharp.Data\src\Json\JsonRuntime.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/JsonRuntime.fs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Commands.fs" />
+  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>

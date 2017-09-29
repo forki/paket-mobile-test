@@ -1,0 +1,36 @@
+source https://www.nuget.org/api/v2
+nuget FSharp.Core
+nuget Microsoft.Identity.Client
+nuget System.Diagnostics.TraceSource
+nuget Iconic.Zlib.Netstandard
+nuget System.Reactive 4.0.0-preview00001
+nuget ReactiveProperty 4.0.0-pre3
+nuget Xamarin.Android.FSharp.ResourceProvider
+nuget Xamarin.Android.Support.Design
+nuget Xamarin.Android.Support.Constraint.Layout
+nuget Xamarin.Android.Support.v4
+nuget Xamarin.Android.Support.v7.AppCompat
+nuget Xamarin.Bindings.SytemBarTint
+nuget Xamarin.Controls.SignaturePad
+nuget Xamarin.DiscreteSeekBar.Android
+nuget ZXing.Net.Mobile
+nuget Xamarin.GooglePlayServices.Maps
+nuget Xamarin.Android.Maps.Utils
+
+github jack-pappas/ExtCore ExtCore/Pervasive.fs
+github jack-pappas/ExtCore ExtCore/Control.Agents.fs
+github jack-pappas/ExtCore ExtCore/Control.fs
+github fsharp/FSharp.Data src/Net/UriUtils.fs
+github fsharp/FSharp.Data src/Net/Http.fs
+github fsharp/FSharp.Data src/CommonRuntime/IO.fs
+github fsharp/FSharp.Data src/CommonRuntime/Caching.fs
+github fsharp/FSharp.Data src/CommonRuntime/TextConversions.fs
+github fsharp/FSharp.Data src/CommonRuntime/TextRuntime.fs
+github fsharp/FSharp.Data src/CommonRuntime/Pluralizer.fs
+github fsharp/FSharp.Data src/CommonRuntime/NameUtils.fs
+github fsharp/FSharp.Data src/CommonRuntime/StructuralTypes.fs
+github fsharp/FSharp.Data src/CommonRuntime/StructuralInference.fs
+github fsharp/FSharp.Data src/Json/JsonValue.fs
+github fsharp/FSharp.Data src/Json/JsonConversions.fs
+github fsharp/FSharp.Data src/Json/JsonExtensions.fs
+github fsharp/FSharp.Data src/Json/JsonRuntime.fs
