@@ -1,4 +1,5 @@
 source https://www.nuget.org/api/v2
+framework: netstandard2 
 nuget FSharp.Core
 nuget Microsoft.Identity.Client
 nuget System.Diagnostics.TraceSource
